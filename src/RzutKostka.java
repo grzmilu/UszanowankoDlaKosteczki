@@ -11,36 +11,31 @@ public class RzutKostka
     {
         
         
-        Random r = new Random();
+     
+      /* try {    
+        p1.setName("");
+        System.out.println("Imię zmienione na: " + p1.getName());
+        } catch(IllegalArgumentException e){  System.out.println("Błąd! " + e.getMessage());}
+        //rodzina klas wyjątków
+        * 
+        */
+        
        // PlayerPC p1= new PlayerPC();
         //Player p1 = new PlayerHuman();
-        Player p1 = new PlayerPC();
-        Boolean guess=true;
-        int master_throw,gracz_guess;
+        Player p1 = new PlayerPC("Nom 1");
+        Player p2 = new PlayerPC("Nom 2");
         
-          
-        try {    
-        p1.setName("");
-        System.out.println("Imię zmienione na: " + player.getName());
-        } catch (IllegalArgumentException e)  System.out.println("Błąd! " + e.getMessage());}
-        //rodzina klas wyjątków
-        while(guess)
-        {
-            
-            master_throw=r.nextInt(6)+1;
-            
-            System.out.println("Rzut mistrza: "+master_throw);
-            int player_guess=p1.guess();
-            System.out.println("Zgadniecie gracza "+p1.getName()+" "+player_guess);
-            if(master_throw==player_guess)
-             {
-                guess=false;
-                System.out.println("Gracz odgadł");
-             }else System.out.println("Pudło\n");
-          
-            
-            
-        }
+        Game game = new Game();
+       
+ 
+     game.addPlayer(p1);        
+     game.addPlayer(p2);
+     
+     game.start();
+       
+        
+      
+    
         
         
         
