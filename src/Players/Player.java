@@ -21,8 +21,12 @@ public abstract class Player
     public void setName(String name) // odnosi sie do najblizszego name
     {
         if(name!=null && !name.isEmpty())this.name = name; //this then obiekt
-        else { throw new IllegalArgumentException();}
+        else {
+ //jeśli nazwa nie jest poprawna, rzucamy wyjątek IllegalArgumentException z odpowiednim komunikatem
+        throw new IllegalArgumentException("Imię nie może być puste!");
+      }
     }
+    
     
     public String getName()
     {
