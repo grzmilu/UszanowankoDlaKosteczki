@@ -17,12 +17,12 @@ public class RzutKostka
         Player p1 = new PlayerPC();
         Boolean guess=true;
         int master_throw,gracz_guess;
-        try{
-            System.out.println("Imie zmienione na "+p1.getName());
-        p1.setName("jan anna przybylska drugi");
-        p1.setName(null);
+        
+          
+        try {    
         p1.setName("");
-        }catch (Exception e){System.out.println("hehe");}
+        System.out.println("Imię zmienione na: " + player.getName());
+        } catch (IllegalArgumentException e)  System.out.println("Błąd! " + e.getMessage());}
         //rodzina klas wyjątków
         while(guess)
         {
