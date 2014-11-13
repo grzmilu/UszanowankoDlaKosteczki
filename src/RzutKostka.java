@@ -22,14 +22,25 @@ public class RzutKostka
         
        // PlayerPC p1= new PlayerPC();
         //Player p1 = new PlayerHuman();
-        Player p1 = new PlayerPC("Nom 1");
-        Player p2 = new PlayerPC("Nom 2");
+        Player p1 = new PlayerPC("Antoni");
+        Player p2 = new PlayerPC("Antoni");
+        Player p3 = new PlayerPC("Antoni");
+        Player p4 = new PlayerPC("Antoni");
+        Player p5 = new PlayerPC("Waldek");
+        Player p6 = new PlayerPC("Antoni");
+          
+        
         
         Game game = new Game();
        
  
      game.addPlayer(p1);        
      game.addPlayer(p2);
+     game.addPlayer(p3);        
+     game.addPlayer(p4);
+     game.addPlayer(p5);        
+     game.addPlayer(p6);
+     game.removePlayer("Antoni");
      
      game.start();
        
