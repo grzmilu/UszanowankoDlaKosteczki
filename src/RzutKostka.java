@@ -20,7 +20,7 @@ public class RzutKostka {
 
         // PlayerPC p1= new PlayerPC();
         //Player p1 = new PlayerHuman();
-        Player p1 = new PlayerPC("Antoni");
+        Player p1 = new PlayerPC("Twoja mama");
         Player p2 = new PlayerPC("Antoni");
         Player p3 = new PlayerPC("Antoni");
         Player p4 = new PlayerPC("Antoni");
